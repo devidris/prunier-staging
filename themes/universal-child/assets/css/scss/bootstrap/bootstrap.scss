@@ -1,0 +1,193 @@
+/* ------------------------------
+ * PRESTASHOP THEME UNIVERSAL
+ * Copyright (c) Prestacrea
+ *
+ * BOOTSTRAP v4.4.1 Twitter Inc
+ * Licensed under MIT license
+ * ------------------------------ */
+
+@import 'functions', '../variables', 'mixins', 'reboot', 'type', 'grid', 'tables', 'forms', 'buttons', 'dropdown',
+        'button-group', 'input-group', 'custom-forms', 'nav', 'navbar', 'card', 'breadcrumb', 'pagination', 'badge', 'alert',
+        'progress', 'list-group', 'close', 'toasts', 'modal', 'tooltip', 'popover', 'carousel', 'spinners', 'utilities';
+
+// MIXINS
+// --------------------
+@mixin link-color($color) {
+  color: color-yiq($color);
+  @include hover() { color: $link-hover-color; }
+}
+
+// REBOOT
+// --------------------
+p:last-child { margin-bottom: 0; }
+::-moz-selection {
+  background-color: $primary;
+  color: color-yiq($primary);
+}
+::selection {
+  background-color: $primary;
+  color: color-yiq($primary);
+}
+img { @include img-fluid(); }
+label { font-weight: $font-weight-bold; }
+input[type="number"] {
+  -moz-appearance: textfield;
+  &::-webkit-inner-spin-button, &::-webkit-outer-spin-button { -webkit-appearance: none; }
+}
+input[type="password"]::-ms-reveal { display: none; }
+
+// TYPE
+// --------------------
+.list-unstyled, .list-inline { margin: 0; }
+.list-arrows li::before {
+  content: "\e97b";
+  font: $font-weight-normal $font-size-lg/1 icomoon;
+  margin: 0 .25rem 0 -.25rem;
+  vertical-align: sub;
+}
+
+// GRID
+// --------------------
+@for $i from 1 through $grid-columns {
+  .col-xs-#{$i} { @extend .col-#{$i}; }
+}
+.col-xs { @extend .col; }
+
+// TABLES
+// --------------------
+.thead-inverse { @extend .thead-dark; }
+.thead-default { @extend .thead-light; }
+.table-inverse { @extend .table-dark; }
+
+// FORMS
+// --------------------
+.col-form-legend { @extend .col-form-label; }
+.form-control-static { @extend .form-control-plaintext; }
+.form-text {
+  opacity: .75;
+  font-size: $input-font-size * .9;
+  font-weight: $font-weight-normal;
+}
+.custom-control-description em { @extend .form-text; }
+.form-check.disabled .form-check-label { color: $custom-control-label-disabled-color; }
+
+// BUTTONS
+// --------------------
+.btn.disabled, .btn:disabled { cursor: not-allowed; }
+.btn-link {
+  color: $primary;
+  @include hover-focus() { color: darken($primary, $emphasized-link-hover-darken-percentage); }
+}
+
+// BUTTON GROUP
+// --------------------
+.btn-group.open { @extend .btn-group.show; }
+[data-toggle="buttons"] { @extend .btn-group-toggle; }
+
+// INPUT GROUP
+// --------------------
+.input-group-btn:first-child { @extend .input-group-prepend; }
+.input-group-btn:last-child { @extend .input-group-append; }
+.input-group-addon { @extend .input-group-text; }
+
+// CUSTOM FORMS
+// --------------------
+.custom-control, .custom-file-input, .custom-file-control, .custom-select { cursor: pointer; }
+.custom-control-description { @extend .custom-control-label; }
+.custom-file-control { @extend .custom-file-label; }
+
+// NAV
+// --------------------
+.nav-tabs {
+  .nav-item { margin-right: 1rem; }
+  .nav-link {
+    border: 0;
+    border-bottom: $nav-tabs-border-width solid transparent;
+  }
+  .nav-link.active, .nav-item.show .nav-link { cursor: default; }
+}
+
+// NAVBAR
+// --------------------
+.navbar-toggleable { @extend .navbar-expand; }
+.navbar-light {
+  .open > .nav-link, .nav-link.open { color: $navbar-light-active-color; }
+}
+.navbar-inverse {
+  @extend .navbar-dark;
+  .open > .nav-link, .nav-link.open { color: $navbar-dark-active-color; }
+}
+
+// CARD
+// --------------------
+.card-block { @extend .card-body; }
+@each $color, $value in $theme-colors {
+  .card-#{$color} { background-color: $value; }
+}
+@each $color, $value in $theme-colors {
+  .card-outline-#{$color} {
+    &, .card-header, .card-footer { border-color: $value; }
+  }
+}
+.card-inverse {
+  color: rgba($white, .8);
+  .card-header, .card-footer, .card-title, .card-link { color: $white; }
+  .card-link:hover { color: rgba($white, .8); }
+}
+
+// PAGINATION
+// --------------------
+.page-item {
+  .page-link { cursor: pointer; }
+  &.active .page-link { cursor: default; }
+}
+
+// BADGE
+// --------------------
+.badge-default { @include badge-variant($secondary); }
+
+// ALERT
+// --------------------
+.alert-link, .alert a {
+  color: inherit !important;
+  font-weight: $alert-link-font-weight;
+  text-decoration: underline;
+  @include hover-focus() { opacity: .8; }
+}
+.alert-icon {
+  padding-left: 3rem;
+  i {
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+// UTILITIES
+// --------------------
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    .flex#{$infix}-first { order: -1 !important; }
+    .flex#{$infix}-last { order: 1 !important; }
+    .flex#{$infix}-unordered { order: 0 !important; }
+  }
+}
+.clear { clear: both; }
+.hidden { display: none; }
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: if(breakpoint-infix($breakpoint, $grid-breakpoints) == "", "-xs", "-#{$breakpoint}");
+    .hidden#{$infix}-#{"up"} { display: none !important; }
+  }
+  @include media-breakpoint-down($breakpoint) {
+    $infix: if(breakpoint-infix($breakpoint, $grid-breakpoints) == "", "-xs", "-#{$breakpoint}");
+    .hidden#{$infix}-#{"down"} { display: none !important; }
+  }
+}
+.bg-faded { @extend .bg-light; }
+.bg-inverse { @extend .bg-dark; }
+.pointer { cursor: pointer; }
+.text-base { font: $font-weight-base $font-size-base/$line-height-base $font-family-base !important; }

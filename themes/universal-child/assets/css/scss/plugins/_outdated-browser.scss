@@ -1,0 +1,49 @@
+/* ------------------------------
+ * PRESTASHOP THEME UNIVERSAL
+ * Copyright (c) Prestacrea
+ * ------------------------------ */
+
+#outdated {
+  background: theme-color-level("warning", $alert-bg-level) !important;
+  box-shadow: 0 0 20px rgba($black, .2);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: theme-color-level("warning", $alert-color-level) !important;
+  text-align: center;
+  padding: 2rem 1rem;
+  z-index: 1500;
+  h6 {
+    font-size: $h1-font-size;
+    margin-top: .5rem;
+  }
+  p {
+    font-size: $font-size-lg;
+    margin: 0;
+  }
+  #buttonUpdateBrowser {
+    background-color: theme-color-level("warning", $alert-color-level);
+    border-radius: $input-border-radius;
+    display: block;
+    width: 230px;
+    color: $white;
+    font-size: $font-size-base;
+    text-transform: uppercase;
+    margin: 1rem auto 0;
+    padding: .75rem 1rem;
+    &:hover { opacity: .8; }
+  }
+  #buttonCloseUpdateBrowser {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    color: theme-color-level("warning", $alert-color-level);
+    font-size: 40px;
+    line-height: 40px;
+    &:hover { opacity: .8; }
+  }
+}

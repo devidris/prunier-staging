@@ -1,0 +1,73 @@
+/* ------------------------------
+ * PRESTASHOP THEME UNIVERSAL
+ * Copyright (c) Prestacrea
+ * ------------------------------ */
+
+@import '../fonts/fonts.css', 'bootstrap/functions', 'variables', 'bootstrap/mixins';
+
+html {
+  background: $black url(../img/maintenance.png) no-repeat scroll center top / cover;
+  height: 100%;
+  &::before {
+    content: "";
+    background: url(../img/prunier.png) no-repeat scroll center 80% / contain;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 12%;
+    right: 12%;
+    z-index: 1;
+  }
+}
+
+#layout-error {
+  border-radius: 2rem;
+  width: 90%;
+  color: $black;
+  font-family: $headings-font-family;
+  @include font-size($font-size-lg);
+  line-height: $line-height-base;
+  margin: 1.5rem auto;
+  overflow: hidden;
+  @include media-breakpoint-up(lg) {
+    width: 75%;
+    margin: 6rem auto;
+  }
+  .page-header, .page-footer {
+    background-color: $primary;
+    @include gradient-striped();
+    background-size: 2rem 2rem;
+    height: 1.5rem;
+  }
+  #content {
+    background-color: rgba($white, .4);
+    position: relative;
+    padding: 2rem;
+    @include media-breakpoint-down(md) { text-align: center; }
+    @include media-breakpoint-up(lg) { padding: 4rem 4rem 4rem 18rem; }
+    &::before {
+      opacity: .8;
+      content: "\f085";
+      font: $font-weight-normal 100px/1 icomoon;
+      @include media-breakpoint-up(lg) {
+        transform: translateY(-50%);
+        position: absolute;
+        top: 50%;
+        left: 4rem;
+        font-size: 160px;
+      }
+    }
+    h1 {
+      color: $primary;
+      text-shadow: 0 1px 1px $black;
+      @include font-size($display4-size);
+      text-transform: uppercase;
+      margin: 1rem 0;
+      @include media-breakpoint-up(lg) { margin: 0 0 1rem; }
+    }
+    p {
+      margin: 0;
+      &:not(:first-child):not(:last-child) { margin: 0 0 .75rem; }
+    }
+  }
+}

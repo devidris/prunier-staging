@@ -1,0 +1,110 @@
+{* ------------------------------
+ * PRESTASHOP THEME UNIVERSAL
+ * Copyright (c) Prestacrea
+ * ------------------------------ *}
+
+<section class="contact-form">
+  <form class="needs-validation" method="post" action="{$urls.pages.contact}" {if $contact.allow_file_upload}enctype="multipart/form-data"{/if}>
+
+    {if $notifications}
+      <div class="alert {if $notifications.nw_error}alert-danger{else}alert-success{/if} mb-0">
+        <ul class="list-unstyled">
+          {foreach $notifications.messages as $notif}
+            <li>{$notif}</li>
+          {/foreach}
+        </ul>
+      </div>
+    {/if}
+
+    {if !$notifications || $notifications.nw_error}
+      <section class="form-fields mt-4">
+        <div class="form-group row">
+          <div class="col-md-3">
+            <label class="col-form-label" for="id_contact">{l s='Subject' d='Shop.CreathemeModules'}</label>
+          </div>
+          <div class="col-md-6">
+            <select class="custom-select" id="id_contact" name="id_contact">
+              <option value="none" selected disabled hidden>{l s='Select' d='Shop.CreathemeGlobal'}</option>
+              {foreach from=$contact.contacts item=contact_elt}
+                <option value="{$contact_elt.id_contact}">{$contact_elt.name}</option>
+              {/foreach}
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-md-3">
+            <label class="col-form-label" for="from">{l s='Email' d='Shop.CreathemeModules'}</label>
+          </div>
+          <div class="col-md-6">
+            <input class="form-control" id="from" name="from" type="email" value="{$contact.email}"
+                   placeholder="{l s='your@email.com' d='Shop.CreathemeModules'}" required>
+          </div>
+        </div>
+
+        {if $contact.orders}
+          <div class="form-group row">
+            <div class="col-md-3">
+              <label class="col-form-label" for="id_order">{l s='Order reference' d='Shop.CreathemeModules'}</label>
+            </div>
+            <div class="col-md-6">
+              <select class="custom-select" id="id_order" name="id_order">
+                <option value selected>{l s='-- please choose --' d='Shop.CreathemeModules'}</option>
+                {foreach from=$contact.orders item=order}
+                  <option value="{$order.id_order}">{$order.reference}</option>
+                {/foreach}
+              </select>
+            </div>
+            <div class="form-control-static col-md-3">
+              <span class="form-text mt-0">{l s='Optional' d='Shop.CreathemeModules'}</span>
+            </div>
+          </div>
+        {/if}
+
+        {if $contact.allow_file_upload}
+          <div class="form-group row">
+            <div class="col-md-3">
+              <label class="col-form-label" for="fileUpload">{l s='Attachment' d='Shop.CreathemeModules'}</label>
+            </div>
+            <div class="col-md-6">
+              <div class="custom-file">
+                <input class="custom-file-input js-file-input" id="fileUpload" name="fileUpload" type="file">
+                <span class="custom-file-control" data-browse="{l s='Browse' d='Shop.CreathemeModules'}">{l s='No selected file' d='Shop.CreathemeModules'}</span>
+              </div>
+            </div>
+            <div class="form-control-static col-md-3">
+              <span class="form-text mt-0">{l s='Optional' d='Shop.CreathemeModules'}</span>
+            </div>
+          </div>
+        {/if}
+
+        <div class="form-group row">
+          <div class="col-md-3">
+            <label class="col-form-label" for="message">{l s='Message' d='Shop.CreathemeModules'}</label>
+          </div>
+          <div class="col-md-9">
+            <textarea class="form-control" id="message" name="message" rows="8" placeholder="{l s='How can we help?' d='Shop.CreathemeModules'}"
+                      required>{if $contact.message}{$contact.message}{/if}</textarea>
+          </div>
+        </div>
+
+        {if isset($id_module)}
+          <div class="form-group row">
+            <div class="col-md-9 offset-md-3">{hook h='displayGDPRConsent' id_module=$id_module}</div>
+          </div>
+        {/if}
+      {hook h='displayPaCaptcha' posTo='contact'}</section>
+
+      <footer class="form-footer row">
+        <div class="col-md-9 offset-md-3">
+          <input class="d-none" name="url" type="text" value="">
+          <input name="token" type="hidden" value="{$token}">
+		<div style="text-align:center !important">{widget name='pixel_cloudflare_turnstile'}
+          <input class="btn btn-primary" name="submitMessage" type="submit" value="{l s='Send' d='Shop.CreathemeModules'}">
+		</div>
+        </div>
+      </footer>
+    {/if}
+
+  </form>
+</section>

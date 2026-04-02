@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="1625e29c02062efe5dbc42c3efeeebc4">
+        <source>-- please choose --</source>
+        <target>-- please choose --</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="93332134fd11cffbe680dd8afaa521fc">
+        <source>-- day --</source>
+        <target>-- day --</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="9180b4d5ab8103f244c2d4fd661934e2">
+        <source>-- month --</source>
+        <target>-- month --</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ae1cc541ba45ce670ea7e0e3a30e3205">
+        <source>-- year --</source>
+        <target>-- year --</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2ba94226eab6f98a094a2accf82746c0">
+        <source>At least 5 characters long</source>
+        <target>At least 5 characters long</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="498f79c4c5bbde77f1bceb6c86fd0f6d">
+        <source>Show</source>
+        <target>Show</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="62a5e490880a92eef74f167d9dc6dca0">
+        <source>Hide</source>
+        <target>Hide</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ebb061953c0454b2c8ee7b0ac615ebcd">
+        <source>Optional</source>
+        <target>Optional</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b61541208db7fa7dba42c85224405911">
+        <source>Menu</source>
+        <target>Menu</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d3d2e617335f08df83599665eef8a418">
+        <source>Close</source>
+        <target>Close</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="fb526aaa0add86e4e124263db50438c8">
+        <source>Showing %from%-%to% of %total% item(s)</source>
+        <target>Showing %from%-%to% of %total% item(s)</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="dd1f775e443ff3b9a89270713580a51b">
+        <source>Previous</source>
+        <target>Previous</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="10ac3d04253ef7e1ddc73e6091c0cd55">
+        <source>Next</source>
+        <target>Next</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="02d4482d332e1aef3437cd61c9bcc624">
+        <source>Contact us</source>
+        <target>Contact us</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b24344b6a2c4a94c9b0d0ebd4602aeca">
+        <source>View more</source>
+        <target>View more</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="af1b98adf7f686b84cd0b443e022b7a0">
+        <source>Categories</source>
+        <target>Categories</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="453aceb005ceaf54a47da15fee8b2a26">
+        <source>Pages</source>
+        <target>Pages</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5813ce0ec7196c492c97596718f71969">
+        <source>Sitemap</source>
+        <target>Sitemap</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="34c869c542dee932ef8cd96d2f91cae6">
+        <source>Our stores</source>
+        <target>Our stores</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a4732b535ead43209ddb4773d197ddbd">
+        <source>Store under maintenance</source>
+        <target>Store under maintenance</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7e74146e0ff2e289abfc8bec1d2b2a18">
+        <source>Sorry for the inconvenience.</source>
+        <target>Sorry for the inconvenience.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="35176a7588e35b1300bcfc6f32422cf9">
+        <source>Go back to [1]homepage[/1] or [2]contact us[/2] if you want to report an error.</source>
+        <target>Go back to [1]homepage[/1] or [2]contact us[/2] if you want to report an error.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="08de2fdaabcd120b8ca1388d21179921">
+        <source>Access denied</source>
+        <target>Access denied</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="4746822bc0f812db099e571d01093ec2">
+        <source>You cannot access this store from your country. Sorry for the inconvenience.</source>
+        <target>You cannot access this store from your country. Sorry for the inconvenience.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0eaadb4fcb48a0a0ed7bc9868be9fbaa">
+        <source>Warning</source>
+        <target>Warning</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="74278a7417c2dc3901827248931ce785">
+        <source>For the proper functioning of the theme, the [1]Prestacrea Theme Editor[/1] module must be installed and permanently enabled on your shop.</source>
+        <target>For the proper functioning of the theme, the [1]Prestacrea Theme Editor[/1] module must be installed and permanently enabled on your shop.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b116aa87e596c5f4d1bcba813fe6617d">
+        <source>Please install and enable this module from your back-office.</source>
+        <target>Please install and enable this module from your back-office.</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

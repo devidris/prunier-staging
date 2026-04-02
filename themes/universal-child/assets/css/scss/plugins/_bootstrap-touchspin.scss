@@ -1,0 +1,41 @@
+/* ------------------------------
+ * PRESTASHOP THEME UNIVERSAL
+ * Copyright (c) Prestacrea
+ * ------------------------------ */
+
+.bootstrap-touchspin {
+  .form-control { border-radius: $input-border-radius !important; }
+  .input-group-btn-vertical {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    > .btn {
+      flex: 1;
+      position: relative;
+      @include hover() { color: rgba($black, .15); }
+    }
+    .bootstrap-touchspin-up, .bootstrap-touchspin-down {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 1.5rem;
+    }
+    .bootstrap-touchspin-up {
+      border-radius: 0 $input-border-radius $input-border-radius 0;
+      right: 0;
+    }
+    .bootstrap-touchspin-down {
+      border-radius: $input-border-radius 0 0 $input-border-radius;
+      left: 0;
+    }
+    i {
+      position: absolute;
+      top: 35%;
+      left: 40%;
+      color: $body-color;
+      font-size: 7px;
+    }
+  }
+}

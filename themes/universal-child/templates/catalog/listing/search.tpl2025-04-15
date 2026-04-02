@@ -1,0 +1,73 @@
+{extends file=$layout}
+
+{block name='head_microdata_special'}
+  {include file='_partials/microdata/product-list-jsonld.tpl' listing=$listing}
+{/block}
+
+{block name='content'}
+<section id="main">
+  <div class="search-header mb-4">
+    <h1>{l s='Search results' d='Shop.Theme.Catalog'}</h1>
+    {if $listing.products|count > 0}
+      <p class="search-count">
+        {l s='%product_count% products found' d='Shop.Theme.Catalog' sprintf=['%product_count%' => $listing.products|count]}
+        {if $search_string}
+          <span class="search-term">{l s='for' d='Shop.Theme.Catalog'} "<em>{$search_string}</em>"</span>
+        {/if}
+      </p>
+    {/if}
+  </div>
+
+  {* Onglets navigation *}
+  <ul class="nav nav-tabs" id="searchTabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="products-tab" data-toggle="tab" href="#products" role="tab" aria-controls="products" aria-selected="true">{l s='Products' d='Shop.Theme.Catalog'}</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="blog-tab" data-toggle="tab" href="#blog" role="tab" aria-controls="blog" aria-selected="false">{l s='Articles'}</a>
+    </li>
+  </ul>
+
+  <div class="tab-content pt-4" id="searchTabContent">
+    {* Onglet Produits *}
+    <div class="tab-pane fade show active" id="products" role="tabpanel" aria-labelledby="products-tab">
+      {if isset($listing.products) && $listing.products|count > 0}
+        {block name='product_list_active_filters'}
+          <div class="active-filters mb-3">
+            {$listing.rendered_active_filters nofilter}
+          </div>
+        {/block}
+
+        {block name='product_list_top'}
+        {/block}
+
+        <div class="products row">
+          {foreach from=$listing.products item="product" name="products"}
+            {include file='catalog/_partials/miniatures/product.tpl' product=$product}
+          {/foreach}
+        </div>
+
+        {block name='product_list_bottom'}
+          {include file='catalog/_partials/products-bottom.tpl' listing=$listing}
+        {/block}
+      {else}
+        <p class="alert alert-warning">{l s='No results were found for your search.' d='Shop.Theme.Catalog'}</p>
+      {/if}
+    </div>
+
+    {* Onglet Articles PrestaBlog *}
+    <div class="tab-pane fade" id="blog" role="tabpanel" aria-labelledby="blog-tab">
+      {capture name=blogResults assign=blogResults}
+        {hook h='displayPrestaBlogSearch' mod='prestablog'}
+      {/capture}
+      {if $blogResults|strip}
+        {$blogResults nofilter}
+      {else}
+        <p class="alert alert-info mt-3">{l s='No articles found in the blog.'}</p>
+      {/if}
+    </div>
+  </div>
+
+  {hook h='displaySearchFooter'}
+</section>
+{/block}

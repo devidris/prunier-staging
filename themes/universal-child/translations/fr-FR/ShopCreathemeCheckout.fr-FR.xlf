@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="" source-language="fr-FR" target-language="fr-FR" datatype="plaintext">
+    <body>
+      <trans-unit id="5c74d926c4b89517ad64133990d04413">
+        <source>Use this address for invoice too</source>
+        <target>Utiliser aussi cette adresse pour la facturation</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ea4788705e6873b424c65e91c2846b19">
+        <source>Cancel</source>
+        <target>Annuler</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c9cc8cce247e49bae79f15173ce97354">
+        <source>Save</source>
+        <target>Enregistrer</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7e0bf6d67701868aac3116ade8fea957">
+        <source>Proceed to checkout</source>
+        <target>Commander</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0d9175fe89fb80d815e7d03698b6e83a">
+        <source>Gift</source>
+        <target>Cadeau</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a2a24f4120a52aa71620662c73eced9d">
+        <source>Your cart is empty</source>
+        <target>Votre panier est vide</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d53907d724bf05eff15a2e80205f2d1e">
+        <source>Show details</source>
+        <target>Afficher les détails</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1063e38cb53d94d386f21227fcd84717">
+        <source>Remove</source>
+        <target>Supprimer</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3111382b0f345f39639de6e580a94933">
+        <source>Have a promo code?</source>
+        <target>Vous avez un code promo ?</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0ab608f7e0d1501be457f7646c1e57c0">
+        <source>Promo code</source>
+        <target>Code promo</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ec211f7c20af43e742bf2570c3cb84f9">
+        <source>Add</source>
+        <target>Ajouter</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="12a7a93d72ded50311b52c7d0a853e3c">
+        <source>Take advantage of our exclusive offers:</source>
+        <target>Profitez de nos offres exclusives :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f53d1cd25e03173ba9eaa4e493636769">
+        <source>(optional)</source>
+        <target>(optionnel)</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c8334d474f091b12e87cf4f8632269f3">
+        <source>And save time on your next order!</source>
+        <target>Et gagnez du temps pour votre prochaine commande !</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="54c02ba7929b1fda4847991a45b58a48">
+        <source>Product customization</source>
+        <target>Personnalisation</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2cee9edacddde0856a46d7db6aff9110">
+        <source>Order items</source>
+        <target>Articles de la commande</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e3e83a01990288b492a11a955723343d">
+        <source>%product_count% item in your cart</source>
+        <target>%product_count% article dans votre panier</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3f5cb84c95c577127e3f9e96d405d21b">
+        <source>%products_count% items in your cart</source>
+        <target>%products_count% articles dans votre panier</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7ce3a11073ffba68bd1e83e243aaabf7">
+        <source>Please check your order before payment</source>
+        <target>Veuillez vérifier votre commande avant le paiement</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="284b47b0bb63ae2df3b29f0e691d6fcf">
+        <source>Addresses</source>
+        <target>Adresses</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="83d893ae1e34a74ab9a068e1d190c764">
+        <source>Shipping method</source>
+        <target>Mode de livraison</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="af0f5bdc5be121b9307687aeeae38c17">
+        <source>Delivery address</source>
+        <target>Adresse de livraison</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="601d8c4b9f72fc1862013c19b677a499">
+        <source>Invoice address</source>
+        <target>Adresse de facturation</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="56d0ed7cd789dd772be59aa6b1e437de">
+        <source>The selected address will be used both as your personal address (for invoice) and as your delivery address.</source>
+        <target>L'adresse sélectionnée sera utilisée à la fois comme adresse personnelle (pour la facturation) et comme adresse de livraison.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="dc024b376ebf01abd90cf4d5e4dca1c7">
+        <source>The selected address will be used as your personal address (for invoice).</source>
+        <target>L'adresse sélectionnée sera utilisée comme adresse personnelle (pour la facturation).</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="bed08e8af70a98c1a8361f13ec477be0">
+        <source>Add new address</source>
+        <target>Ajouter une nouvelle adresse</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ea34b5c6cf6511c7c9e23cf7bf5d6792">
+        <source>Your address is incomplete, please update it.</source>
+        <target>Votre adresse est incomplète, veuillez la mettre à jour.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="de11e974c8a3322d7459b8a07d78ce48">
+        <source>Invoice address differs from delivery address</source>
+        <target>L'adresse de facturation est différente de l'adresse de livraison</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7dce122004969d56ae2e0245cb754d35">
+        <source>Edit</source>
+        <target>Modifier</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="dde6c860ae1ac6573875352abf1822ef">
+        <source>No payment needed for this order</source>
+        <target>Aucun paiement nécessaire pour cette commande</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="97b72d419a22e2d1144b2fb05ee26901">
+        <source>Unfortunately, there are no payment method available.</source>
+        <target>Malheureusement, aucun moyen de paiement n'est disponible.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5486191906ec27c1c4bb5bd3e46b3442">
+        <source>Order with an obligation to pay</source>
+        <target>Commande avec obligation de paiement</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3a31d70f8c2eb35a29f6c58e9664cd7f">
+        <source>Please make sure you've chosen a [1]payment method[/1] and accepted the [2]terms and conditions[/2].</source>
+        <target>Veuillez vous assurer que vous avez sélectionné un [1]moyen de paiement[/1] et accepté les [2]conditions générales de vente[/2].</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2fdfd506efea08144c0794c32ca8250a">
+        <source>Create an account</source>
+        <target>Créez un compte</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6280ed214163d6e214763ff970910cdc">
+        <source>Connected as [1]%firstname% %lastname%[/1].</source>
+        <target>Connecté en tant que [1]%firstname% %lastname%[/1].</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8e3ecabff428ab5465ab8feb928436e0">
+        <source>Not you? [1]Log out[/1]</source>
+        <target>Ce n'est pas vous ? [1]Se déconnecter[/1]</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3e0b39c8cd14dd15fff36eecf9c19861">
+        <source>If you sign out now, your cart will be emptied.</source>
+        <target>Si vous vous déconnectez maintenant, votre panier sera vidé.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c1fc8e1c54652420d0822e0614089df6">
+        <source>Order as a guest</source>
+        <target>Commander en tant qu'invité</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b6d4223e60986fa4c9af77ee5f7149c5">
+        <source>Sign in</source>
+        <target>Connexion</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a0bfb8e59e6c13fc8d990781f77694fe">
+        <source>Continue</source>
+        <target>Continuer</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="74be79a7ea2349e303ea207e41f00121">
+        <source>If you would like to add a comment about your order, please write it in the field below:</source>
+        <target>Si vous voulez nous laisser un message à propos de votre commande, merci de bien vouloir le renseigner dans le champ ci-dessous :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ffa50f0c5e9ed6cdb468665cc552cecb">
+        <source>I would like to receive my order in recycled packaging</source>
+        <target>J'accepte de recevoir ma commande dans un emballage recyclé</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5153f37f9159735ef4ae472c19b732e3">
+        <source>If you'd like, you can add a note to the gift:</source>
+        <target>Vous pouvez ajouter un message à votre cadeau :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="9a605fc0e1667ebdbd0ac37cf9f90789">
+        <source>Unfortunately, there are no carriers available for your delivery address.</source>
+        <target>Il n'y a malheureusement aucun transporteur pouvant livrer à votre adresse.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f373b403975d367491574fb2c739fef7">
+        <source>Shopping cart</source>
+        <target>Panier</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="300225ee958b6350abc51805dab83c24">
+        <source>Continue shopping</source>
+        <target>Continuer mes achats</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7f21696f11929f5ed55ca5bcb15d2fc1">
+        <source>Your order is confirmed</source>
+        <target>Votre commande est confirmée</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="316294b9d7dbd10a2506ba9ef786a046">
+        <source>An email has been sent to your email address %email%</source>
+        <target>Un e-mail vous a été envoyé à l'adresse e-mail %email%</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="186f9a937f0afc4cce2bbc4087dfd3fa">
+        <source>You can also [1]download your invoice[/1]</source>
+        <target>Vous pouvez aussi [1]télécharger votre facture[/1]</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d6e2d6aeb314dc9788b3a1e44940c207">
+        <source>Order details:</source>
+        <target>Détails de la commande :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="00cd7d0890cd975da95799c32764c9ce">
+        <source>Order reference: %reference%</source>
+        <target>Référence de la commande : %reference%</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e120387480bc284c5347ae1baa480670">
+        <source>Payment method: %method%</source>
+        <target>Moyen de paiement : %method%</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="080753487a8bc0bb9a5275bcb9951516">
+        <source>Shipping method: %method%</source>
+        <target>Mode de livraison : %method%</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="cc6f3e2192d71f54d7b181d91f04d165">
+        <source>Save time on your next order, sign up now</source>
+        <target>Gagnez du temps pour votre prochaine commande, inscrivez-vous maintenant</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d3d2e617335f08df83599665eef8a418">
+        <source>Close</source>
+        <target>Fermer</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="91b442d385b54e1418d81adc34871053">
+        <source>Selected</source>
+        <target>Sélectionnés</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="961f2247a2070bedff9f9cd8d64e2650">
+        <source>Choose</source>
+        <target>Choisir</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7395559a94fa7a25907a155cda78afa0">
+        <source>Confirm order</source>
+        <target>Confirmer la commande</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

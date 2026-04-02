@@ -1,0 +1,23 @@
+ 
+
+{shop_url}
+
+Congratulations!
+
+A new professional customer has just registered on your shop {shop_name}
+
+Company : {company}
+Country : {country}
+Lastname : {lastname}
+Firstname : {firstname}
+E-mail adress : {email}
+SIRET : {siret}
+VAT Number : {vatNumber}
+APE : {ape}
+Website : {website}
+
+{message}
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop-project.org/)

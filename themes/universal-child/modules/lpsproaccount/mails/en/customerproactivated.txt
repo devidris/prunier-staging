@@ -1,0 +1,13 @@
+ 
+
+{shop_url}
+
+Hi {firstname} {lastname},
+
+Your professional customer account has just been activated on {shop_name}.
+
+You can now place an order on our shop : [{shop_name}]({shop_url})
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop-project.org/)

@@ -1,0 +1,23 @@
+ 
+
+{shop_url}
+
+Bravo !
+
+Un nouveau client professionnel vient de s'inscrire sur votre boutique {shop_name}
+
+Société : {company}
+Pays : {country}
+Nom : {lastname}
+Prénom : {firstname}
+Adresse e-mail : {email}
+SIRET : {siret}
+Numéro de TVA intracommunautaire : {vatNumber}
+APE : {ape}
+Site web : {website}
+
+{message}
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop-project.org/)

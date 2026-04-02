@@ -1,0 +1,62 @@
+{* ------------------------------
+ * PRESTASHOP THEME UNIVERSAL
+ * Copyright (c) Prestacrea
+ * ------------------------------ *}
+
+<div id="footer-before">
+  <div class="container">
+    <div class="row d-block position-relative">
+      {block name='hook_footer_before'}{hook h='displayFooterBefore'}{/block}
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+  <div class="container">
+    <div class="row">
+      {block name='hook_footer'}{hook h='displayFooter'}{/block}
+    </div>
+  </div>
+</div>
+
+<div id="footer-after">
+  <div class="container">
+    <div class="row">
+      {block name='hook_footer_after'}{hook h='displayFooterAfter'}{/block}
+    </div>
+  </div>
+</div>
+
+<div id="footer-copyright">
+  <div class="container">
+    {block name='copyright_link'}
+      <div class="text-center p-3">
+        © {'Y'|date}, Caviar Prunier - Tous droits réservés -
+      </div>
+    {/block}
+  </div>
+
+<script
+  
+  script
+  async
+  data-desktop-y-offset="20"
+  data-mobile-y-offset="0"
+  data-desktop-disable-reviews="false"
+  data-desktop-enable-custom="false"
+  data-desktop-position="left"
+  data-desktop-custom-width="156"
+  data-desktop-enable-fadeout="false"
+  data-disable-mobile="false"
+  data-disable-trustbadge="false"
+  data-mobile-custom-width="156"
+  data-mobile-disable-reviews="false"
+  data-mobile-enable-custom="false"
+  data-mobile-position="left"
+  data-color-scheme="light"
+  charset="UTF-8"
+  src="//widgets.trustedshops.com/js/X04EDA9EA2A9764FEE4D2E1EC887AAA29.js">
+</script>
+
+</div>
+<script src="/themes/universal-child/assets/js/prunier-img-optimizer.js" defer></script>

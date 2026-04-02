@@ -1,0 +1,101 @@
+/* ------------------------------
+ * PRESTASHOP THEME UNIVERSAL
+ * Copyright (c) Prestacrea
+ * ------------------------------ */
+
+.owl-carousel {
+  display: none;
+  -webkit-tap-highlight-color: transparent;
+  .owl-stage {
+    @include clearfix();
+    position: relative;
+    -ms-touch-action: pan-Y;
+        touch-action: pan-Y;
+  }
+  .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    transform: none;
+  }
+  .owl-wrapper, .owl-item {
+    backface-visibility: hidden;
+    transform: none;
+  }
+  .owl-item {
+    position: relative;
+    float: left;
+    min-height: 1px;
+    backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+  }
+  &.owl-loaded { display: block; }
+  &.owl-loading {
+    opacity: 0;
+    display: block;
+  }
+  &.owl-hidden { opacity: 0; }
+  &.owl-refresh .owl-item { visibility: hidden; }
+  &.owl-drag .owl-item { user-select: none; }
+  &.owl-grab {
+    cursor: move;
+    cursor: grab;
+  }
+  .owl-animated-in { z-index: 0; }
+  .owl-animated-out { z-index: 1; }
+  .owl-height { transition: height .5s ease-in-out; }
+  .owl-item {
+    .owl-lazy {
+      transition: opacity .4s ease;
+      opacity: 0;
+    }
+    img.owl-lazy { transform-style: preserve-3d; }
+  }
+}
+.owl-nav, .owl-dots {
+  -webkit-tap-highlight-color: transparent;
+  &.disabled { display: none; }
+}
+.owl-nav {
+  .owl-prev, .owl-next {
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    color: inherit;
+    font: $font-weight-bold 50px/1 'Times New Roman', sans-serif;
+    cursor: pointer;
+    z-index: 1;
+    user-select: none;
+  }
+  .owl-prev { left: 0; }
+  .owl-next { right: 0; }
+  .disabled {
+    opacity: .2;
+    cursor: default;
+  }
+}
+.owl-dots {
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+  .owl-dot {
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    span {
+      background-color: lighten($primary, 25%);
+      border-radius: 50%;
+      box-shadow: inset 0 2px 2px rgba($black, .5);
+      display: block;
+      width: 14px;
+      height: 14px;
+      margin: 0 .2rem;
+      backface-visibility: visible;
+    }
+    &.active { cursor: default; }
+    &.active span, &:hover span { background-color: $primary; }
+  }
+}

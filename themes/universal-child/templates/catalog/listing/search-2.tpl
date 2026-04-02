@@ -1,0 +1,71 @@
+{extends file=$layout}
+
+{block name='head_microdata_special'}
+  {include file='_partials/microdata/product-list-jsonld.tpl' listing=$listing}
+{/block}
+
+{block name='content'}
+  <section id="main">
+    <div class="search-header mb-4">
+      <h1>{l s='Search results' d='Shop.Theme.Catalog'}</h1>
+      {if $listing.products|count > 0}
+        <p class="search-count">
+          {l s='%product_count% products found' d='Shop.Theme.Catalog' sprintf=['%product_count%' => $listing.products|count]}
+          {if $search_string}
+            <span class="search-term">{l s='for' d='Shop.Theme.Catalog'} "<em>{$search_string}</em>"</span>
+          {/if}
+        </p>
+      {/if}
+    </div>
+    
+    <section id="products" class="search-results">
+      {if isset($listing) && isset($listing.products) && $listing.products|count > 0}
+        {* Active filters *}
+        {block name='product_list_active_filters'}
+          <div class="active-filters mb-3">
+            {$listing.rendered_active_filters nofilter}
+          </div>
+        {/block}
+        
+        {* Sort options *}
+        {block name='product_list_top'}
+          {include file='catalog/_partials/products-top.tpl' listing=$listing}
+        {/block}
+        
+        {* Product list *}
+        <div class="products row">
+          {foreach from=$listing.products item="product" name="products"}
+            {include file='catalog/_partials/miniatures/product.tpl' product=$product}
+          {/foreach}
+        </div>
+        
+        {* Pagination *}
+        {block name='product_list_bottom'}
+          {include file='catalog/_partials/products-bottom.tpl' listing=$listing}
+        {/block}
+      {else}
+        <div class="search-no-results">
+          <p class="alert alert-warning">{l s='No results were found for your search.' d='Shop.Theme.Catalog'}</p>
+          
+          <div class="search-tips mt-4">
+            <h3>{l s='Search tips' d='Shop.Theme.Catalog'}</h3>
+            <ul>
+              <li>{l s='Check your spelling.' d='Shop.Theme.Catalog'}</li>
+              <li>{l s='Try more general keywords.' d='Shop.Theme.Catalog'}</li>
+              <li>{l s='Try different keywords.' d='Shop.Theme.Catalog'}</li>
+            </ul>
+          </div>
+          
+          <div class="search-categories mt-4">
+            <h3>{l s='Browse our categories' d='Shop.Theme.Catalog'}</h3>
+            <div class="categories-links">
+              {hook h='displaySearchCategories'}
+            </div>
+          </div>
+        </div>
+      {/if}
+    </section>
+    
+    {hook h='displaySearchFooter'}
+  </section>
+{/block}

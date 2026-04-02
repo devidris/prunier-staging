@@ -1,0 +1,246 @@
+{* ------------------------------
+ * PRESTASHOP THEME UNIVERSAL
+ * Copyright (c) Prestacrea
+ * ------------------------------ *}
+
+<!DOCTYPE html>
+<html class="h-100 m-0" lang="{$language.locale}">
+
+  <!-- 
+   * PRESTASHOP THEME UNIVERSAL v1.0.16
+   * Copyright (c) Prestacrea
+  -->
+
+  <head>
+    {block name='head'}
+      {include file='_partials/head.tpl'}
+    {/block}
+  </head>
+
+  <body class="{$page.body_classes|classnames} h-100 d-flex flex-column" id="{$page.page_name}">
+  {literal}
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCP2F975"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  {/literal}
+
+    {block name='hook_after_body_opening_tag'}{hook h='displayAfterBodyOpeningTag'}{/block}
+
+    <header class="flex-shrink-0" id="header-container">
+      {block name='header'}
+        {include file='_partials/header.tpl'}
+      {/block}
+    </header>
+
+    {if $page.page_name == 'index'}
+
+      {*
+      <section class="flex-shrink-0" id="top-column-container">
+        <div {if isset($pte_sliderwidth) && $pte_sliderwidth != 'window'}class="container"{/if}>
+          <div {if isset($pte_sliderwidth) && $pte_sliderwidth == 'column'}class="d-md-flex justify-content-md-between"{/if}>
+            {hook h='displayTopColumn'}
+            <div class="home-video position-relative overflow-hidden backgroundImage">
+
+              <div class="home-video-caption position-absolute text-center" style="top: 46%;z-index: 1000000;">
+                <h1 class="home-video-title h2 display-4 text-white mb-0 peignot" style="font-size: 6rem;letter-spacing: 10px;">
+                  Prunier caviar LOVE
+                </h1>
+                <span class="peignot text-white d-block" style="font-size: 1.5rem;margin-top: -15px;">{l s='Prunier invites you to choose one of its limited editions illustrated by Yves Saint Laurent' d='Shop.CreathemeGlobal'}</span>
+                <div class="home-video-link mt-5">
+                  <a href="/fr/boutique-en-ligne/99-caviar-prunier-oscietre.html" class="btn btn-outline-primary ctaplain rounded-0 text-uppercase py-3 px-5">{l s='[1]Choose[/1] my limited edition' d='Shop.CreathemeGlobal'  sprintf=['[1]' => "<strong>", '[/1]' => '</strong>']}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      *}
+
+      {* <section class="flex-shrink-0" id="top-column-container">
+        <div {if isset($pte_sliderwidth) && $pte_sliderwidth != 'window'}class="container"{/if}>
+          <div {if isset($pte_sliderwidth) && $pte_sliderwidth == 'column'}class="d-md-flex justify-content-md-between"{/if}>
+            {hook h='displayTopColumn'}
+            <div class="home-video position-relative overflow-hidden">
+
+              <video id="hh-v" class="w-100" autoplay muted loop>
+                <source type='video/mp4' src='/themes/universal-child/assets/img/home-video-2021-2.mp4' />
+                <img src="{$urls.img_url}maintenance.jpg" alt="{$shop.name}" width="1440" height="795" loading="lazy">
+              </video>
+
+              <video id="hh-m" class="d-none w-100" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                <source type='video/mp4' src='/themes/universal-child/assets/img/prunier_video_mobile.mp4' />
+                <img src="{$urls.img_url}maintenance.jpg" alt="{$shop.name}" width="1440" height="795" loading="lazy">
+              </video>
+
+              <div class="home-video-caption position-absolute text-center" style="top: 46%;z-index: 1000000;">
+                <h1 class="home-video-title h2 display-4 text-white mb-0 peignot" style="font-size: 6rem;letter-spacing: 10px;">
+                  PRUNIER
+                </h1>
+                <span class="peignot text-white d-block" style="font-size: 1.5rem;margin-top: -15px;">{l s='Since' d='Shop.CreathemeGlobal'}</span>
+                <div class="home-video-link hidden-xs-down mt-5 d-none">
+                  <a class="position-relative font-weight-bold text-white text-uppercase" href="#">{l s='Discover' d='Shop.CreathemeGlobal'}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-5 welcome-text">
+        <div class="container">
+          <div style="max-width: 950px;margin: 0 auto;">
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="text-center display-4">{l s='home_text_header_1' d='Shop.CreathemeGlobal'}</h2>
+                <p class="mt-2 peignot text-center" style="font-size: 25px;">{l s='home_text_header_2' d='Shop.CreathemeGlobal'}</p>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-6 pr-5">
+                <p class="text-justify" style="line-height: 27px;">
+                  {l s='home_text_header_3' d='Shop.CreathemeGlobal' sprintf=['[1]' => "<strong>",'[/1]' => "</strong>",'[2]' => "<br/>"]}
+                </p>
+              </div>
+              <div class="col-md-6 pl-5">
+                <p class="text-justify" style="line-height: 27px;">
+                  <span style="font-size: 18px;">
+                    <i>
+                    {l s='home_text_header_4' d='Shop.CreathemeGlobal' sprintf=['[1]' => "<strong>",'[/1]' => "</strong>",'[2]' => "<br/>"]}
+                    </i>
+                  </span>
+                  <br/><br/>
+                    {l s='home_text_header_5' d='Shop.CreathemeGlobal' sprintf=['[1]' => "<strong>",'[/1]' => "</strong>",'[2]' => "<br/>"]}
+                </p>
+              </div>
+              <div class="col-md-12 text-center">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="story-banner">
+        <div class="container mt-5 mb-5" style="background-image: url({$urls.img_url}rect.png);background-repeat: no-repeat;">
+          <div class="hero text-center" style="height: 424px;max-width:953px;margin:0 auto;background-image: url({$urls.img_url}g.png);background-position: center;background-size: cover;">
+            <h2 class="display-4" style="font-size: 75px;color:white;padding-top: 180px;">
+              <span class="d-none font-weight-bold">{l s='The art of French[2]caviar' d='Shop.CreathemeGlobal' sprintf=['[2]' => "<br/>"]}</span>
+            </h2>
+          </div>
+        </div>
+      </div> *}
+
+    {/if}
+
+    <section class="d-flex flex-column flex-grow-1 flex-shrink-0" id="page-container">
+      {hook h='displayWrapperTop'}
+
+      {block name='breadcrumb'}
+        {include file='_partials/breadcrumb.tpl'}
+      {/block}
+
+      {block name='page_header_container'}
+        {if $page.page_name == 'module-prestablog-magazine' or $page.page_name == 'module-prestablog-blog' }
+          <header class="page-header position-relative text-center text-white overflow-hidden flex-shrink-0 py-5">
+{*            <div class="container">
+
+              <img class="header-cover position-absolute" src="{$urls.img_url}blog-header.jpg" alt="" loading="lazy" width="1440" height="450">
+
+              <div class="header-text container position-relative my-5 py-5">
+                <h1 class="display-4 mb-3">{l s='Articles & tips' d='Shop.CreathemeModules'}</h1>
+                <div class="header-text-content h4 mx-auto mb-5">{l s='Blog header description' d='Shop.CreathemeModules'}</div>
+                <div class="header-link mb-4">
+                  <a class="position-relative font-weight-bold text-white text-uppercase" href="#center-column">{l s='Discover' d='Shop.CreathemeModules'}</a>
+                </div>
+              </div>
+
+            </div>
+*}
+          </header>
+        {else}
+          {if $page.page_name == 'category'} 
+            <header class="page-header text-center pt-5">
+              <div class="container">
+                <h1 class="display-4 mb-3">{block name='page_title' hide}{$smarty.block.child}{/block}</h1>
+              </div>
+            </header>
+          {/if}
+        {/if}
+      {/block}
+
+      <div class="container h-100">
+
+        <div class="h-100" id="page">
+          {block name='notifications'}
+            {include file='_partials/notifications.tpl'}
+          {/block}
+
+          {block name='product_activation'}
+            {include file='catalog/_partials/product-activation.tpl'}
+          {/block}
+
+          <div class="row" id="columns">
+            {block name='left_column'}
+              <div class="side-column column col-lg-3 hidden-md-down">
+                <div id="left-column">
+                  {if $page.page_name == 'product'}{hook h='displayLeftColumnProduct'}{else}{hook h='displayLeftColumn'}{/if}
+                </div>
+              </div>
+            {/block}
+
+            {block name='center_column'}
+              <div class="center-column column col-lg-6">
+                <div class="js-content-wrapper" id="center-column">
+                  {hook h='displayContentWrapperTop'}
+                  {block name='content'}{/block}
+                  {hook h='displayContentWrapperBottom'}
+                </div>
+              </div>
+            {/block}
+
+            {block name='right_column'}
+              <div class="side-column column col-lg-3 hidden-md-down">
+                <div id="right-column">
+                  {if $page.page_name == 'product'}{hook h='displayRightColumnProduct'}{else}{hook h='displayRightColumn'}{/if}
+                </div>
+              </div>
+            {/block}
+          </div>
+        </div>
+      </div>
+
+      {hook h='displayWrapperBottom'}
+    </section>
+
+    <footer class="js-footer flex-shrink-0" id="footer-container">
+      {block name='footer'}
+        {include file='_partials/footer.tpl'}
+      {/block}
+    </footer>
+
+    {block name='javascript_bottom'}
+      {include file='_partials/javascript.tpl' javascript=$javascript.bottom}
+    {/block}
+
+    {if !isset($pte_active)}
+      <div class="pte-modal modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <p class="modal-title h1 mt-3 mx-3" id="modal-label">{l s='Warning' d='Shop.CreathemeGlobal'}</p>
+            <div class="modal-body alert alert-warning text-center m-3 p-4">
+              {l s='For the proper functioning of the theme, the [1]Prestacrea Theme Editor[/1] module must be installed and permanently enabled on your shop.'
+                 d='Shop.CreathemeGlobal' sprintf=['[1]' => '<strong>', '[/1]' => '</strong>']}
+              <strong class="d-block mt-3">{l s='Please install and enable this module from your back-office.' d='Shop.CreathemeGlobal'}</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>$('.pte-modal').modal('show')</script>
+    {/if}
+
+    <div id="outdated"></div>
+
+    {block name='hook_before_body_closing_tag'}{hook h='displayBeforeBodyClosingTag'}{/block}
+  </body>
+
+</html>

@@ -1,0 +1,130 @@
+{if Configuration::get('topbar_state')}
+<div class="topbar-prunier">
+  <div class="container text-white py-2">
+    {if Context::getContext()->language->id == 1}
+      {Configuration::get('topbar_content') nofilter}
+    {else}
+      {Configuration::get('topbar_content_en') nofilter}
+    {/if}
+  </div>
+</div>
+{/if}
+
+{* Ajout des balises hreflang de façon sécurisée *}
+{if isset($language) && isset($language.id)}
+  {if $page.page_name == 'product' && isset($product)}
+    <link rel="alternate" hreflang="fr" href="{Context::getContext()->link->getProductLink($product.id, null, null, null, 1)}" />
+    <link rel="alternate" hreflang="fr-FR" href="{Context::getContext()->link->getProductLink($product.id, null, null, null, 1)}" />
+    <link rel="alternate" hreflang="fr-BE" href="{Context::getContext()->link->getProductLink($product.id, null, null, null, 1)}" />
+    <link rel="alternate" hreflang="fr-LU" href="{Context::getContext()->link->getProductLink($product.id, null, null, null, 1)}" />
+    <link rel="alternate" hreflang="fr-MC" href="{Context::getContext()->link->getProductLink($product.id, null, null, null, 1)}" />
+    <link rel="alternate" hreflang="en" href="{Context::getContext()->link->getProductLink($product.id, null, null, null, 2)}" />
+    <link rel="alternate" hreflang="en-FR" href="{Context::getContext()->link->getProductLink($product.id, null, null, null, 2)}" />
+    <link rel="alternate" hreflang="en-BE" href="{Context::getContext()->link->getProductLink($product.id, null, null, null, 2)}" />
+    <link rel="alternate" hreflang="en-LU" href="{Context::getContext()->link->getProductLink($product.id, null, null, null, 2)}" />
+    <link rel="alternate" hreflang="en-MC" href="{Context::getContext()->link->getProductLink($product.id, null, null, null, 2)}" />
+    <link rel="alternate" hreflang="x-default" href="{Context::getContext()->link->getProductLink($product.id, null, null, null, 1)}" />
+  {elseif $page.page_name == 'category' && isset($category)}
+    <link rel="alternate" hreflang="fr" href="{Context::getContext()->link->getCategoryLink($category.id, null, 1)}" />
+    <link rel="alternate" hreflang="fr-FR" href="{Context::getContext()->link->getCategoryLink($category.id, null, 1)}" />
+    <link rel="alternate" hreflang="fr-BE" href="{Context::getContext()->link->getCategoryLink($category.id, null, 1)}" />
+    <link rel="alternate" hreflang="fr-LU" href="{Context::getContext()->link->getCategoryLink($category.id, null, 1)}" />
+    <link rel="alternate" hreflang="fr-MC" href="{Context::getContext()->link->getCategoryLink($category.id, null, 1)}" />
+    <link rel="alternate" hreflang="en" href="{Context::getContext()->link->getCategoryLink($category.id, null, 2)}" />
+    <link rel="alternate" hreflang="en-FR" href="{Context::getContext()->link->getCategoryLink($category.id, null, 2)}" />
+    <link rel="alternate" hreflang="en-BE" href="{Context::getContext()->link->getCategoryLink($category.id, null, 2)}" />
+    <link rel="alternate" hreflang="en-LU" href="{Context::getContext()->link->getCategoryLink($category.id, null, 2)}" />
+    <link rel="alternate" hreflang="en-MC" href="{Context::getContext()->link->getCategoryLink($category.id, null, 2)}" />
+    <link rel="alternate" hreflang="x-default" href="{Context::getContext()->link->getCategoryLink($category.id, null, 1)}" />
+  {/if}
+{/if}
+
+{block name='header_banner'}
+<meta name="p:domain_verify" content="93d97f5c06a2539a5afe12a5e772eefd"/>
+  <div class="header-banner">
+    <div class="row">
+      <div class="col-md-5">
+        {hook h='displayBanner'}
+      </div>
+      <div class="col-md-2">
+        <!--<a class="hidden-md-down mx-2 mx-xl-3" href="{$urls.base_url}">-->
+        <a class="hidden-md-down mx-2 mx-xl-3" href="{$urls.base_url}">
+          <img src="/themes/universal-child/assets/img/logo-prunier-text-black.png" alt="caviar français" width="183" height="100" loading="lazy" class="logomax">
+          {*<img src="/themes/universal-child/assets/img/logo-prunier-text-only.png" alt="Vendeur de caviar de qualité" width="183" height="100" loading="lazy" class="logomin">*}
+	  {*<img src="/themes/universal-child/assets/img/logo-prunier-only.jpg" alt="Vendeur de caviar de qualité" width="60" height="60" loading="lazy" class="logomin">*}
+	  <img src="/themes/universal-child/assets/img/logo-prunier-text-black.png" alt="caviar français" width="183" height="100" loading="lazy" class="logomin">
+        </a>
+      </div>
+      <div class="col-md-5">
+        {hook h='displayBannerRight'}
+      </div>
+    </div>
+  </div>
+{/block}
+
+{block name='header_top'}
+  <div class="header-top" style="box-shadow: 0 3px 3px #e0e0e0 !important;margin-bottom:3px !important">
+    <div class="container d-flex justify-content-center justify-content-md-between align-items-center py-2 py-lg-3">
+      <div class="pointer hidden-lg-up" id="menu-icon">
+        <img class="menu-icon-open show" src="{$urls.img_url}icon-menu.png" alt="acheter du caviar" width="20" height="20">
+        <img class="menu-icon-close hidden" src="{$urls.img_url}icon-close.png" alt="acheter du caviar" width="20" height="20">
+	
+	{*<img class="menu-icon-open show" src="{$urls.img_url}logo-modile-prunier-text-only.png" alt="acheter du caviar" width="20" height="20">
+        <img class="menu-icon-close hidden" src="{$urls.img_url}logo-modile-prunier-text-only.png" alt="acheter du caviar" width="20" height="20">*}
+	
+      </div>
+      <a class="position-absolute hidden-lg-up" id="header-logo" href="{$urls.base_url}">
+        {*<img src="{$shop.logo}" alt="Vendeur de caviar français restaurant paris" width="90" height="54" loading="lazy">*}
+
+	{*<img src="{$urls.img_url}logo-modile-prunier-text-only.png" alt="Vendeur de caviar français restaurant paris" width="90" height="54" loading="lazy">*}
+	<img src="{$urls.img_url}logo-prunier-text-black.png" alt="Vendeur de caviar français restaurant paris" width="90" height="54" loading="lazy">
+
+      </a>
+      {hook h='displayTop'}
+    </div>
+  </div>
+{/block}
+
+<div class="header-menu {if isset($pte_menuwidth) && $pte_menuwidth == 'window'}menu-bg{/if}">
+  <div class="container">
+    {block name='header_nav_full_width'}{hook h='displayNavFullWidth'}{/block}
+  </div>
+</div>
+
+<div class="position-fixed h-100 overflow-hidden hidden-lg-up p-3" id="mobile_top_menu_wrapper">
+  <div class="mobile js-top-menu text-uppercase" id="_mobile_top_menu"></div>
+  <div id="liens-edito">
+      <ul class="top-menu list-unstyled d-lg-flex flex-wrap align-items-center justify-content-end mr-auto">
+        <li><a href="/fr/maison" class="dropdown-item  bg-transparent position-relative text-wrap">MAISON</a></li>
+        <li><a href="/fr/restaurant" class="dropdown-item  bg-transparent position-relative text-wrap">RESTAURANT</a></li>
+        <li><a href="/fr/nos-boutiques" class="dropdown-item  bg-transparent position-relative text-wrap">BOUTIQUES</a></li>
+        <li><a href="/fr/magazine" class="dropdown-item  bg-transparent position-relative text-wrap">BLOG</a></li>
+        <li><a href="/fr/2-boutique-en-ligne" class="dropdown-item  bg-transparent position-relative text-wrap">E-SHOP</a></li>
+
+      </ul>
+  </div>
+  <div class="mobile-info my-4">
+    <a class="d-block mb-4" href="{$link->getPageLink('contact')}">{l s='Contact' d='Shop.CreathemeGlobal'}</a>
+  </div>
+<div class="js-top-menu-bottom bg-primary d-flex justify-content-center text-uppercase mx-n3 py-3">
+    <div class="mobile-user-info mr-4 pr-4">
+      <span class="d-block" data-ob="{$urls.pages.my_account|base64_encode}">
+        <img class="align-text-top mr-2" src="{$urls.img_url}icon-user.png" alt="restaurant 16eme de caviar" width="18" height="19">
+        <span class="text-white">{l s='My account' d='Shop.CreathemeGlobal'}</span>
+      </span>
+    </div>
+    <div id="_mobile_language_selector"></div>
+  </div>
+
+</div>
+{literal}
+<script 
+  id="Cookiebot"
+  src="https://consent.cookiebot.com/uc.js?cbid=0ffcbb37-f471-4868-a7c9-b9b9d6ab5764"
+  type="text/javascript"
+  defer
+></script>
+<script type="text/javascript" defer>window.$crisp=[];window.CRISP_WEBSITE_ID="394b7615-4d35-42c1-b0f6-e47e87edc69d";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+<script src="https://analytics.ahrefs.com/analytics.js" data-key="AFviC5EEw+nsO0+r88BD6g" async></script>
+ 
+{/literal}

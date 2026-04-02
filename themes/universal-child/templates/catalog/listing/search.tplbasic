@@ -1,0 +1,19 @@
+{extends file='page.tpl'}
+
+{block name='page_title'}
+  Résultats de recherche pour "{$search_string|escape:'html':'UTF-8'}"
+{/block}
+
+{block name='page_content'}
+  {if $products|count}
+    <div class="products row">
+      {foreach from=$products item=product}
+        <div class="col-md-4 col-sm-6 mb-4">
+          {include file='catalog/_partials/miniatures/product.tpl' product=$product}
+        </div>
+      {/foreach}
+    </div>
+  {else}
+    <p>Aucun produit trouvé.</p>
+  {/if}
+{/block}

@@ -1,0 +1,71 @@
+{* ------------------------------
+ * PRESTASHOP THEME UNIVERSAL
+ * Copyright (c) Prestacrea
+ * ------------------------------ *}
+
+{if $cart.vouchers.allowed}
+  {block name='cart_voucher'}
+    <div class="block-promo cart-voucher js-cart-voucher">
+
+      {if $cart.vouchers.added}
+        {block name='cart_voucher_list'}
+          <ul class="promo-name list-unstyled card-block">
+            {foreach from=$cart.vouchers.added item=voucher}
+              <li class="cart-summary-line clearfix">
+                <span class="label">{$voucher.name}</span>
+                {if (isset($voucher.code) && $voucher.code !== '') || !isset($voucher.code)}
+                  <span class="remove-promo float-right ml-2" data-ob="{$voucher.delete_url|base64_encode}" title="{l s='Remove' d='Shop.CreathemeCheckout'}"
+                        data-link-action="remove-voucher"><i class="icon-close-thin align-top" aria-hidden="true"></i></span>
+                {/if}
+                <span class="value float-right">{$voucher.reduction_formatted}</span>
+              </li>
+            {/foreach}
+          </ul>
+        {/block}
+      {/if}
+
+      <div class="promo-code card-block mb-4 mx-3" id="promo-code">
+
+        <p class="promo-code-title text-primary mb-2">{l s='Have a promo code?' d='Shop.CreathemeCheckout'}</p>
+
+        {block name='cart_voucher_form'}
+          <form class="needs-validation" method="post" action="{$urls.pages.cart}" data-link-action="add-voucher">
+            <input name="token" type="hidden" value="{$static_token}">
+            <input name="addDiscount" type="hidden" value="1">
+            <div class="input-group">
+              <input class="promo-input form-control" name="discount_name" type="text" placeholder="{l s='Promo code' d='Shop.CreathemeCheckout'}" required>
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="submit">{l s='Add' d='Shop.CreathemeCheckout'}</button>
+              </span>
+            </div>
+          </form>
+        {/block}
+
+        {block name='cart_voucher_notifications'}
+          <div class="alert alert-danger alert-icon js-error hidden mt-3 mb-0" role="alert">
+            <i class="icon-exclamation-circle-thick" aria-hidden="true"></i>
+            <span class="js-error-text"></span>
+          </div>
+        {/block}
+
+        {if $cart.discounts|count > 0}
+          <p class="promo-highlighted-title mt-3 mb-1">{l s='Take advantage of our exclusive offers:' d='Shop.CreathemeCheckout'}</p>
+          <ul class="promo-discounts js-discount list-unstyled">
+            {foreach from=$cart.discounts item=discount}
+              <li class="cart-summary-line">
+                <span class="label">
+                  <strong class="code pointer">{$discount.code}</strong> - {$discount.name}
+                </span>
+              </li>
+            {/foreach}
+          </ul>
+        {/if}
+
+      </div>
+	<div style="padding:20px">
+		<p class=promo-code-title mb-2">{l s='Vous rencontrez une difficulté lors de la finalisation de votre commande ?' d='Shop.CreathemeCheckout'}</p>
+		Nous sommes à votre disposition pour vous répondre au <a href="tel:+33681416616"><b>+33 6 81 41 66 16</b></a>
+	</div>	
+    </div>
+  {/block}
+{/if}

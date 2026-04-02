@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="" source-language="fr-FR" target-language="fr-FR" datatype="plaintext">
+    <body>
+      <trans-unit id="7dce122004969d56ae2e0245cb754d35">
+        <source>Edit</source>
+        <target>Modifier</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1063e38cb53d94d386f21227fcd84717">
+        <source>Remove</source>
+        <target>Supprimer</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c9cc8cce247e49bae79f15173ce97354">
+        <source>Save</source>
+        <target>Enregistrer</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="01a569ddc6cf67ddec2a683f0a5f5956">
+        <source>Forgot your password?</source>
+        <target>Mot de passe oublié ?</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b6d4223e60986fa4c9af77ee5f7149c5">
+        <source>Sign in</source>
+        <target>Connexion</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a958dbb46713e59856c35f89e5092a5e">
+        <source>Back to your account</source>
+        <target>Retour à votre compte</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8cf04a9734132302f96da8e113e80ce5">
+        <source>Home</source>
+        <target>Accueil</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="694e8d1f2ee056f98ee488bdc4982d73">
+        <source>Quantity</source>
+        <target>Quantité</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3d0d1f906e27800531e054a3b6787b7c">
+        <source>Quantity:</source>
+        <target>Quantité :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0eede552438475bdfe820c13f24c9399">
+        <source>Total price</source>
+        <target>Prix total</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3dd42bfc8345e82c43b4a40a3426ec49">
+        <source>Reference:</source>
+        <target>Référence :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="54c02ba7929b1fda4847991a45b58a48">
+        <source>Product customization</source>
+        <target>Personnalisation</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6c957f72dc8cdacc75762f2cbdcdfaf2">
+        <source>Unit price</source>
+        <target>Prix unitaire</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="fdfac28b5ad628f25649d9c2eb4fc62e">
+        <source>Returned</source>
+        <target>Retourné</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b24ba8f2fdd43eb0686bc7c6363e7c77">
+        <source>Returned:</source>
+        <target>Retourné :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3956298bcfc047e15b0e0d218492ce09">
+        <source>Merchandise return</source>
+        <target>Retour de marchandise</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="bef8403608dc4cb3ade799f63dd4bf59">
+        <source>If you wish to return one or more products, please mark the corresponding boxes and provide an explanation for the return. When complete, click the button below.</source>
+        <target>Si vous désirez nous retourner un ou plusieurs produits, veuillez cocher chacun d'entre eux et spécifier un motif de retour, puis valider.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1af342a10e8238b722ba844facf5768b">
+        <source>Request a return</source>
+        <target>Renvoyer un produit</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="94966d90747b97d1f0f206c98a8b1ac3">
+        <source>Send</source>
+        <target>Envoyer</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="deb10517653c255364175796ace3553f">
+        <source>Product</source>
+        <target>Produit</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="41de6d6cfb8953c021bbe4ba0701c8a1">
+        <source>Messages</source>
+        <target>Messages</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="58b3d8603dffe8484e90c0ca371921ac">
+        <source>Add a message</source>
+        <target>Ajouter un message</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="74be79a7ea2349e303ea207e41f00121">
+        <source>If you would like to add a comment about your order, please write it in the field below:</source>
+        <target>Si vous voulez nous laisser un message à propos de votre commande, merci de bien vouloir le renseigner dans le champ ci-dessous :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1625e29c02062efe5dbc42c3efeeebc4">
+        <source>-- please choose --</source>
+        <target>-- veuillez choisir --</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1969f55c252d855905838c3e0d827e1b">
+        <source>Edit my address</source>
+        <target>Modifier mon adresse</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5144a9adfce5a7d475bb8194a4a310a5">
+        <source>Create new address</source>
+        <target>Créer une nouvelle adresse</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="bed08e8af70a98c1a8361f13ec477be0">
+        <source>Add new address</source>
+        <target>Ajouter une nouvelle adresse</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="11f4b4ba23dc72ee5e86ff5a90bdde60">
+        <source>Log in to your account</source>
+        <target>Connectez-vous à votre compte</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1854ab51ab1af9b05120923268a12473">
+        <source>You already have an account</source>
+        <target>Vous possédez déjà un compte</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="995a151e4151b89299549245ee740953">
+        <source>You do not have an account yet</source>
+        <target>Vous n'avez pas encore de compte</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d50965b89f4bf0dfbc5b1f13052421a4">
+        <source>Create your account today and enjoy:</source>
+        <target>Créez votre compte dès aujourd'hui et bénéficiez des avantages suivants :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ca0dbad92a874b2f69b549293387925e">
+        <source>Code</source>
+        <target>Code</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b5a7adde1af5c87d7fd797b6245c2a39">
+        <source>Description</source>
+        <target>Description</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="689202409e48743b914713f96d93947c">
+        <source>Value</source>
+        <target>Valeur</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a1d0ec6d56f8833a078b5a7ac4caf2d4">
+        <source>Minimum</source>
+        <target>Minimum</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="eb2527806a7e1ef48009eaaa785368fe">
+        <source>Cumulative</source>
+        <target>Cumulable</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8c1279db4db86553e4b9682f78cf500e">
+        <source>Expiration date</source>
+        <target>Date d'expiration</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="bcc7582c9a66be8187578997794a9c1f">
+        <source>Code:</source>
+        <target>Code :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d0042a700e9bdf79689d63ee6846dc0e">
+        <source>Description:</source>
+        <target>Description :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="acdb802bfc2b99b15d1782570285c427">
+        <source>Value:</source>
+        <target>Valeur :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c0d23f98b06c2bb7e5f56072b02b98fe">
+        <source>Minimum:</source>
+        <target>Minimum :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6ae3bf7e7d485c2afac4decea1042194">
+        <source>Cumulative:</source>
+        <target>Cumulable :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="fee965235205e3d6d6bea5645e45f352">
+        <source>Expiration date:</source>
+        <target>Date d'expiration :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d2948a89e47a4ad7eb8412c1c260ea88">
+        <source>To track your order, please enter the following information:</source>
+        <target>Afin de suivre votre commande, veuillez saisir les informations suivantes :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5d4710f9a8250b13164a82c94d5b00d1">
+        <source>Order reference</source>
+        <target>Référence de commande</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="92dbb751eb9457441af82a53f3cfae54">
+        <source>For example: QIIXJXNUI or QIIXJXNUI#1</source>
+        <target>Par exemple : QIIXJXNUI ou QIIXJXNUI#1</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7a8fe8aaa64e691d82f429d39e0df3a5">
+        <source>Personalized and secure access</source>
+        <target>Accès personnalisé et sécurisé</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="93aef17b1541efc1c3f8bd6679972096">
+        <source>Fast and easy checkout</source>
+        <target>Passage de commande rapide et facile</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1f1015bbef5f42d858e8486397ad8f3e">
+        <source>Easier merchandise return</source>
+        <target>Retours produits plus faciles</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8bbbace7ffb26d61b400c72ffe493f4d">
+        <source>Guest order tracking</source>
+        <target>Suivi de commande invité</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="109636f722b8fccc95d072b2760a6282">
+        <source>Transform your guest account into a customer account and enjoy:</source>
+        <target>Transformez votre compte invité en compte client et bénéficiez des avantages suivants :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7e0aff4aeb8279964bc88a5221ad1c0b">
+        <source>Set your password</source>
+        <target>Définissez votre mot de passe</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c453a4b8e8d98e82f35b67f433e3b4da">
+        <source>Payment</source>
+        <target>Paiement</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="466eadd40b3c10580e3ab4e8061161ce">
+        <source>Invoice</source>
+        <target>Facture</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3ec365dd533ddb7ef3d1c111186ce872">
+        <source>Details</source>
+        <target>Détails</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="284b47b0bb63ae2df3b29f0e691d6fcf">
+        <source>Addresses</source>
+        <target>Adresses</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a82868319826fb092b73968e661b5b38">
+        <source>Vouchers</source>
+        <target>Bons de réduction</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="782c8b38bce4f2f6975ca7f33ac8189b">
+        <source>Order history</source>
+        <target>Historique des commandes</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a82be0f551b8708bc08eb33cd9ded0cf">
+        <source>Information</source>
+        <target>Informations</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d95cf4ab2cbf1dfb63f066b50558b07d">
+        <source>My account</source>
+        <target>Mon compte</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="da4791bc9700aca963b560fcb7db0605">
+        <source>Add first address</source>
+        <target>Ajouter une première adresse</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c87aacf5673fada1108c9f809d354311">
+        <source>Sign out</source>
+        <target>Déconnexion</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="44749712dbec183e983dcd78a7736c41">
+        <source>Date</source>
+        <target>Date</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="332c80b1838dc515f5031e09da3b7f3f">
+        <source>Reorder</source>
+        <target>Commander à nouveau</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f5d74ea75357b5e139854c14f8e24fe3">
+        <source>Order details</source>
+        <target>Détails de la commande</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f8617a92ba0a0a4eabee724eab7c9f48">
+        <source>Carrier:</source>
+        <target>Transporteur :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c1f6368d15f7c13c4e5e8f70c68c747f">
+        <source>Payment method:</source>
+        <target>Moyen de paiement :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e682495785e844d491378817aa34aa3f">
+        <source>Download your invoice as a PDF file.</source>
+        <target>Téléchargez votre facture au format PDF.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="755bb0834a77079fd1330b555b69e6bf">
+        <source>You have given permission to receive your order in recycled packaging.</source>
+        <target>Vous avez accepté de recevoir votre commande dans un emballage recyclé.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e14bc5cef02df7369b604ea3885adb96">
+        <source>You have requested gift wrapping for this order.</source>
+        <target>Vous avez demandé un papier cadeau pour cette commande.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="940663fd4428d2c86f9a4780b6574028">
+        <source>Message:</source>
+        <target>Message :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="46774573a61204e0aac6c4ab10247d3e">
+        <source>Follow your order's status step-by-step</source>
+        <target>Suivre votre commande pas à pas</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="914419aa32f04011357d3b604a86d7eb">
+        <source>Carrier</source>
+        <target>Transporteur</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8c489d0946f66d17d73f26366a4bf620">
+        <source>Weight</source>
+        <target>Poids</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5068c162a60b5859f973f701333f45c5">
+        <source>Tracking number</source>
+        <target>Numéro de suivi</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="cdefe2e02fa9c54ac7124da7a17e41f0">
+        <source>Delivery address (%alias%)</source>
+        <target>Adresse de livraison (%alias%)</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2e89a65bd9f37eb635902eda82d69411">
+        <source>Invoice address (%alias%)</source>
+        <target>Adresse de facturation (%alias%)</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ec53a8c4f07baed5d8825072c89799be">
+        <source>Status</source>
+        <target>Statut</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e06d7593c1cd6dabef450be6c3da7091">
+        <source>Merchandise returns</source>
+        <target>Retours produit</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="988fd738de9c6d177440c5dcf69e73ce">
+        <source>Return</source>
+        <target>Retour</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0940441c1cb2fdf7dca23e58c2e34da1">
+        <source>Return form</source>
+        <target>Bon de retour</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="daf51d7d9e10e6a469434ae548d9a173">
+        <source>Print out</source>
+        <target>Imprimer</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="793083bf8991f4ad5c14186f2fbfa536">
+        <source>Return:</source>
+        <target>Retour :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="24a23d787190f2c4812ff9ab11847a72">
+        <source>Status:</source>
+        <target>Statut :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="886425acb06e7eb3ee5e4c35273eb8a5">
+        <source>Return form:</source>
+        <target>Bon de retour :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="cd8ee64ef80cd6bb4e320a7d0563b56f">
+        <source>Return details</source>
+        <target>Détails du retour</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="88be9ea838e21273267409d76af3b284">
+        <source>We have logged your return request.</source>
+        <target>Nous avons enregistré votre demande de retour.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="77264630b0f035a114135e26f0e56a5c">
+        <source>The current status of your merchandise return is: [1] %status% [/1]</source>
+        <target>L'état actuel de votre retour produit est : [1] %status% [/1]</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b24be74c768f02b296d4e8f41be486fb">
+        <source>List of items to be returned:</source>
+        <target>Liste des articles à retourner :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="92a9774c2a5df29ac4bffb46219ea9cd">
+        <source>Reminder</source>
+        <target>Rappel</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2b79d007c64009edf92d06f7cb280b25">
+        <source>All merchandise must be returned in its original packaging and in its original state.</source>
+        <target>Tous les produits doivent être retournés dans leur emballage et leur état d'origine.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="98ab163287778d2a38de2f37337e73c2">
+        <source>Please print out the [1]return form[/1] and include it with your package.</source>
+        <target>Veuillez imprimer le [1]bon de retour[/1] et l'inclure dans votre colis.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="34da2df39fcc073392b67500b57dc961">
+        <source>Please check the return form for the correct address.</source>
+        <target>Veuillez vérifier que le bon de retour contient la bonne adresse.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="98e5a2604f2f65db94e01a678ac9d72b">
+        <source>If the conditions of return listed above are not respected, we reserve the right to refuse your package and/or refund.</source>
+        <target>Si les conditions de retour listées ci-dessus ne sont pas respectées, nous nous réservons le droit de refuser votre colis et/ou votre remboursement.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="594c5d192d61d1a8bdbdec18cba03b96">
+        <source>When we receive your package, we will notify you by email. We will then begin processing order refund.</source>
+        <target>Dès réception de votre colis, nous procéderons au remboursement du montant de votre commande et vous en informerons par e-mail.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f393a2fe17dc0cacff53a136479b845d">
+        <source>Please let us know if you have any questions.</source>
+        <target>Veuillez nous contacter pour toute question.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a240fa27925a635b08dc28c9e4f9216d">
+        <source>Order</source>
+        <target>Commande</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d1a365ea7809ae5831c6d9f86886630c">
+        <source>Credit slips</source>
+        <target>Avoirs</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="446faa7da2d42ba4ffeda73cb119dd91">
+        <source>Date issued</source>
+        <target>Date d'émission</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2ca3deb5cd68fa9119b285804fab572f">
+        <source>Order:</source>
+        <target>Commande :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d64817176cd4c29479d1fa37454ef0a6">
+        <source>Date issued:</source>
+        <target>Date d'émission :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="cf3bae95c5f6023d5a10fe415b205a45">
+        <source>Credit slip</source>
+        <target>Avoir</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3cb6ea48a427bf3a1687302e3b764c27">
+        <source>View credit slip</source>
+        <target>Afficher l'avoir</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e4783411b228888388513839d754f87a">
+        <source>Credit slip:</source>
+        <target>Avoir :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ce8ae9da5b7cd6c3df2929543a9af92d">
+        <source>Email</source>
+        <target>E-mail</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f28d8a87d03470521d5a992312bfaed8">
+        <source>Please enter the email address you used to register. You will receive a temporary link to reset your password.</source>
+        <target>Veuillez renseigner l'adresse e-mail que vous avez utilisée à la création de votre compte. Vous recevrez un lien temporaire pour réinitialiser votre mot de passe.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="463e58c1d35fb5a4a8d717c99a60d257">
+        <source>Back to login</source>
+        <target>Retour à la connexion</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="32fe59513f5bbdd353b4527cc6af55ce">
+        <source>Reset your password</source>
+        <target>Réinitialiser votre mot de passe</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1b61f24345b084cbacad62fa2d22e59c">
+        <source>Email: %email%</source>
+        <target>E-mail : %email%</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3544848f820b9d94a3f3871a382cf138">
+        <source>New password</source>
+        <target>Nouveau mot de passe</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f4d1ea475eaa85102e2b4e6d95da84bd">
+        <source>Confirmation</source>
+        <target>Confirmation</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0b39c5aca15b84b1ad53a94d6b3feb78">
+        <source>Change password</source>
+        <target>Changer le mot de passe</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2fdfd506efea08144c0794c32ca8250a">
+        <source>Create an account</source>
+        <target>Créer un compte</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="21bdc5689c12595ae14298354d5550d5">
+        <source>Already have an account?</source>
+        <target>Vous avez déjà un compte ?</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="54fc27e749c6998fb54cebc1a0879692">
+        <source>Log in instead!</source>
+        <target>Connectez-vous !</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="651bd1a80f7cb02cb79551f16a154e96">
+        <source>Order %reference% placed on %date%</source>
+        <target>Commande %reference% du %date%</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f70774b7b940c5c25b0482deeae31d98">
+        <source>Return %number% placed on %date%</source>
+        <target>Retour %number% du %date%</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d45c14e2fb387664ad2a66a2b8f7c0a4">
+        <source>Your package must be returned to us within %number% days of receiving your order.</source>
+        <target>Votre colis doit nous être retourné sous %number% jours à compter de la réception de votre commande.</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

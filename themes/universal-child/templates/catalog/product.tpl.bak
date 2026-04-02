@@ -1,0 +1,236 @@
+{* ------------------------------
+ * PRESTASHOP THEME UNIVERSAL
+ * Copyright (c) Prestacrea
+ * ------------------------------ *}
+
+{extends file=$layout}
+
+{if $ps_version < '1.7.8.0'}
+  {block name='head_seo' prepend}
+    <link rel="canonical" href="{$product.canonical_url}">
+  {/block}
+{/if}
+
+{block name='head' append}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="{$urls.current_url}">
+  <meta property="og:title" content="{$page.meta.title}">
+  <meta property="og:description" content="{$page.meta.description}">
+  {if $product.cover}
+    <meta property="og:image" content="{$product.cover.bySize.large_default.url}">
+  {/if}
+  <meta property="og:site_name" content="{$shop.name}">
+  {if $product.show_price}
+    <meta property="product:price:amount" content="{$product.price_amount}">
+    <meta property="product:price:currency" content="{$currency.iso_code}">
+  {/if}
+{/block}
+
+{block name='page_header_container'}{/block}
+
+{block name='content'}
+  <section id="main" itemscope itemtype="https://schema.org/Product">
+    <meta itemprop="url" content="{$product.canonical_url}">
+    <img class="product-cover position-absolute w-100" src="{$product.dwf_big_image_header}" alt="{$product.name}" width="1440" height="738" loading="lazy">
+
+    <section class="product-detail-primary">
+      <div class="row product-container js-product-container">
+        <div class="product-info bg-white col-lg-7 offset-lg-5 col-xl-6 offset-xl-6 col-xxl-5 offset-xxl-7 p-4 p-lg-5">
+          <span class="circles-product-detail-primary circles position-absolute hidden-md-down"></span>
+
+          <div class="badge-primary rounded d-inline-block text-uppercase mb-3 py-2 px-3">{$product.category_name}</div>
+
+          {block name='product_title'}
+            <h1 class="product-title" itemprop="name">{$product.name}</h1>
+          {/block}
+
+          {block name='product_description_short'}
+            <div class="product-description-short" id="product-description-short-{$product.id}"
+                 itemprop="description">{$product.description_short nofilter}</div>
+          {/block}
+
+          {if $product.id_category_default == 17 OR $product.id_category_default == 18}
+            <div class="advantages mt-3">
+              <div class="item-adv d-flex align-items-center">
+                <div class="puceCircle mr-2"></div>
+                <p>{l s='Caviar 100% [1]French[/1]' d='Shop.CreathemeCatalog' sprintf=['[1]' => "<strong>", '[/1]' => '</strong>']}</p>
+              </div>
+              <div class="item-adv d-flex align-items-center mt-3">
+                <div class="puceCircle mr-2"></div>
+                <p>{l s='Produced from a [1]respectful[/1] breeding at Prunier Manufacture' d='Shop.CreathemeCatalog' sprintf=['[1]' => "<strong>", '[/1]' => '</strong>']}</p>
+              </div>
+              <div class="item-adv d-flex align-items-center mt-3">
+                <div class="puceCircle mr-2"></div>
+                <p>{l s='Espèce' d='Shop.CreathemeCatalog'} : <u data-toggle="modal" data-target="#exampleModal">{if $product.id_category_default == 17}Acipenser Gueldenstaedtii{/if}{if $product.id_category_default == 18}Acipenser Baerii{/if}</u></p>
+              </div>
+            </div>
+          {/if}
+
+          {block name='product_prices'}
+            {include file='catalog/_partials/product-prices.tpl'}
+          {/block}
+
+          <div class="product-information mt-4">
+            {block name='product_customization'}
+              {if $product.is_customizable && count($product.customizations.fields)}
+                {include file='catalog/_partials/product-customization.tpl' customizations=$product.customizations}
+              {/if}
+            {/block}
+
+            {block name='product_buy'}
+              <div class="product-actions js-product-actions">
+                <form id="add-to-cart-or-refresh" method="post" action="{$urls.pages.cart}">
+                  <input name="token" type="hidden" value="{$static_token}">
+                  <input id="product_page_product_id" name="id_product" type="hidden" value="{$product.id}">
+                  <input class="js-product-customization-id" id="product_customization_id" name="id_customization" type="hidden" value="{$product.id_customization}">
+
+                  {block name='product_variants'}
+                    {include file='catalog/_partials/product-variants.tpl'}
+                  {/block}
+
+                  {block name='product_pack'}
+                    {if $packItems}
+                      <section class="product-pack border-bottom py-3">
+                        <p class="font-weight-bold">{l s='Pack content' d='Shop.CreathemeCatalog'}</p>
+                        {foreach from=$packItems item=product_pack}
+                          {block name='product_miniature'}
+                            {include file='catalog/_partials/miniatures/pack-product.tpl' product=$product_pack showPackProductsPrice=$product.show_price}
+                          {/block}
+                        {/foreach}
+                      </section>
+                    {/if}
+                  {/block}
+
+                  {block name='product_discounts'}
+                    {include file='catalog/_partials/product-discounts.tpl'}
+                  {/block}
+
+                  {block name='product_add_to_cart'}
+                    {include file='catalog/_partials/product-add-to-cart.tpl'}
+                  {/block}
+
+                  <div class="d-flex justify-content-between align-items-center" style="display: none !important;">
+                    <div class="d-flex align-items-center">
+                      <img src="{$urls.img_url}cc.jpg" alt="Click & Collect Prunier.com">
+                      <div class="ml-2">
+                        <span style="font-size: 11px;" class="d-block text-uppercase">En <strong>Click&Collect</strong></span>
+                        <span style="font-size: 11px;">Boutique Madeleine, Paris</span>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img src="{$urls.img_url}cold.jpg" alt="Colis frais Prunier.com">
+                      <div class="ml-2">
+                        <span style="font-size: 11px;" class="d-block text-uppercase">Colis <strong>frais</strong></span>
+                        <span style="font-size: 11px;">En France, livré en 48H.</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {block name='product_out_of_stock'}
+                    <div class="product-out-of-stock">{hook h='actionProductOutOfStock' product=$product}</div>
+                  {/block}
+
+                  {block name='product_additional_info'}
+                    {include file='catalog/_partials/product-additional-info.tpl'}
+                  {/block}
+
+                  {block name='product_refresh'}
+                    <input class="product-refresh hidden" name="refresh" type="submit" value="{l s='Refresh' d='Shop.CreathemeCatalog'}">
+                  {/block}
+                </form>
+              </div>
+            {/block}
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+        {if $product.description}
+      <section class="product-detail-secondary mt-md-5 mb-5 py-5">
+        <div class="row">
+
+          <div class="product-detail-left col-lg-6 col-xxl-6">
+
+            <span class="circles-product-detail-secondary circles position-absolute hidden-sm-down"></span>
+
+            <div class="row">
+
+              <div class="col-6 col-md-6">
+                <img class="product-detail-left-img position-relative w-100 lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                     data-src="{$product.dwf_situation_left}" alt="Caviar Prunier" width="304" height="359">
+                <div class="quote row mt-4">
+                  <div class="col-3 dnm">
+                    <img class="quote-img-01 lazy mr-3" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                         data-src="{$urls.img_url}peter-rebeiz.png" alt="Peter Rebeiz" width="63" height="62">
+                  </div>
+                  <div class="col-9 dnm quote-content">
+                    <p class="font-italic">{$product.dwf_quote_author}</p>
+                    <p class="font-weight-bold">{l s='Peter Rebeiz.' d='Shop.CreathemeCatalog'}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6">
+                <img class="product-detail-right-img position-relative w-100 lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                     data-src="{$product.dwf_situation_right}" alt="Caviar Prunier" width="304" height="359">
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="product-detail-right col-lg-5 offset-xxl-1">
+            <div class="product-description">
+              <p class="h2 display-4 mb-3">
+                {l s='In [1]detail[/1].' d='Shop.CreathemeCatalog' sprintf=['[1]' => "<span class='font-weight-bold'>", '[/1]' => '</span>']}
+              </p>
+              {$product.description nofilter}
+            </div>
+            {if $product.features}
+              <div class="product-features card card-block mt-5 p-4">
+                {foreach from=$product.features item=feature name=loop}
+                  <div class="d-flex justify-content-between {if !$smarty.foreach.loop.last}mb-4{/if}">
+                    <span class="feature-name font-italic">{$feature.name}</span>
+                    {if $feature.name == 'Taille des grains'}
+                      <span class="feature-value grain d-flex align-items-center">
+                        <span class="grain-01 d-inline-block rounded-circle ml-2 {if $feature.value == "1/3"}checked{/if}"></span>
+                        <span class="grain-02 d-inline-block rounded-circle ml-2 {if $feature.value == "2/3"}checked{/if}"></span>
+                        <span class="grain-03 d-inline-block rounded-circle ml-2 {if $feature.value == "3/3"}checked{/if}"></span>
+                      </span>
+                    {else}
+                      <span class="feature-value {if $feature.id_feature == 7}h3 font-weight-bold{/if}">{$feature.value}</span>
+                    {/if}
+                  </div>
+                {/foreach}
+              </div>
+            {/if}
+          </div>
+
+        </div>
+      </section>
+    {/if}
+
+    {block name='product_accessories'}
+      {if $accessories}
+        <section class="product-accessories products-carousel mb-3">
+          <p class="products-carousel-title h1 mb-4">{l s='You might also like' d='Shop.CreathemeCatalog'}</p>
+          <div class="products-carousel-content position-relative px-4">
+            <div class="owl-carousel d-flex justify-content-around">
+              {foreach from=$accessories item=product_accessory}
+                {include file='catalog/_partials/miniatures/carousel-product.tpl' product=$product_accessory}
+              {/foreach}
+            </div>
+          </div>
+        </section>
+      {/if}
+    {/block}
+
+    {block name='product_footer'}{hook h='displayFooterProduct' product=$product category=$category}{/block}
+
+    {block name='product_images_modal'}
+      {include file='catalog/_partials/product-images-modal.tpl'}
+    {/block}
+
+  </section>
+{/block}

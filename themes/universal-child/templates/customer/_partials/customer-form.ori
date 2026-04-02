@@ -1,0 +1,36 @@
+{* ------------------------------
+ * PRESTASHOP THEME UNIVERSAL
+ * Copyright (c) Prestacrea
+ * ------------------------------ *}
+
+{block name='customer_form'}
+
+  {block name='customer_form_errors'}
+    {include file='_partials/form-errors.tpl' errors=$errors['']}
+  {/block}
+
+  <form class="needs-validation js-customer-form" id="customer-form" method="post" action="{block name='customer_form_actionurl'}{$action}{/block}">
+
+    <div>
+      {block name='customer_form_fields'}
+        {foreach from=$formFields item=field}
+          {block name='form_field'}{form_field field=$field}{/block}
+        {/foreach}
+        {$hook_create_account_form nofilter}
+      {/block}
+    </div>
+
+    {block name='customer_form_footer'}
+      <footer class="form-footer row">
+        <div class="col-md-6 offset-md-3">
+          <input name="submitCreate" type="hidden" value="1">
+          {block name='form_buttons'}
+            <button class="btn btn-primary" type="submit" data-link-action="save-customer">{l s='Save' d='Shop.CreathemeCustomer'}</button>
+          {/block}
+        </div>
+      </footer>
+    {/block}
+
+  </form>
+
+{/block}

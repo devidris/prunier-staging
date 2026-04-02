@@ -1,0 +1,16 @@
+parent: universal
+name: universal-child
+display_name: Universal Child
+version: 1.0.0
+assets:
+  use_parent_assets: false
+  js:
+    all:
+      - id: theme-main
+        path: assets/js/theme.js
+        priority: 95
+        position: bottom
+      - id: prunier-img-optimizer
+        path: assets/js/prunier-img-optimizer.js
+        priority: 90
+        position: bottom
